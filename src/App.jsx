@@ -1,4 +1,5 @@
 import './App.css'
+import profileImage from './assets/richard-hagan-profile.jpg'
 
 const strengths = [
   {
@@ -97,18 +98,28 @@ function App() {
           </div>
 
           <aside className="hero-card">
-            <p className="mini-label">Current focus</p>
-            <div className="metric-block">
-              <strong>Current role</strong>
-              <span>Tech Support at Asabea Engineering Limited, Accra</span>
+            <div className="portrait-frame">
+              <img
+                className="portrait-image"
+                src={profileImage}
+                alt="Richard Antwi Hagan portrait"
+              />
             </div>
-            <div className="metric-block">
-              <strong>Education</strong>
-              <span>BTech and HND in Computer Science from Accra Technical University</span>
-            </div>
-            <div className="metric-block">
-              <strong>Certification</strong>
-              <span>Salesforce Administrator with hands-on interest in cloud and CRM systems</span>
+
+            <div className="profile-summary">
+              <p className="mini-label">Professional snapshot</p>
+              <div className="metric-block">
+                <strong>Current role</strong>
+                <span>Tech Support at Asabea Engineering Limited, Accra</span>
+              </div>
+              <div className="metric-block">
+                <strong>Education</strong>
+                <span>BTech and HND in Computer Science from Accra Technical University</span>
+              </div>
+              <div className="metric-block">
+                <strong>Certification</strong>
+                <span>Salesforce Administrator with hands-on interest in cloud and CRM systems</span>
+              </div>
             </div>
           </aside>
         </section>
